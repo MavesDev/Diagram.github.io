@@ -4,32 +4,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Diagram UML | Raqhin Kusmanadinata</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <nav class="navbar bg-body-tertiary py-3 mb-4">
-        <div class="container-md">
-            <div class="container-fluid text-center">
-                <span class="navbar-brand mb-0 h1">Raqhin Kusmanadinata</span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-md-top">
+        <div class="container-md py-2">
+            <a class="navbar-brand" href="#">Raqhin Kusmanadinata | Diagram UML</a>
+            <button class="navbar-toggler sticky-md-top" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Diagram Structure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#behaviour">Diagram Behaviour</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-md d-flex justify-content-center mb-4">
+    <div class="container-md d-flex justify-content-center my-4">
         <div class="card text-center" style="width: 800px;">
             <div class="card-header"></div>
-            <div class="card-body">
+            <div class="card-body" id="structure">
                 <h5 class="card-title">Structure Diagram</h5>
-                <p class="card-text">Diagram struktur adalah jenis diagram dalam Unified Modeling Language (UML) yang digunakan untuk menggambarkan struktur atau komponen dari suatu sistem atau bagian dari sistem tersebut. </p>
+                <p class="card-text">Diagram struktur adalah jenis diagram dalam Unified Modeling Language (UML) yang
+                    digunakan untuk menggambarkan struktur atau komponen dari suatu sistem atau bagian dari sistem
+                    tersebut. </p>
             </div>
             <div class="card-footer text-body-secondary"></div>
         </div>
     </div>
-    
+
     <div class="container-md d-flex justify-content-center mb-4">
         <div class="card" style="width: 800px;">
             <img src="img/usecase.jpeg" style="max-height: 550px;" class="card-img-top" alt="...">
@@ -82,26 +96,26 @@
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="mb-2">
-                                    <h6>Kelas</h6>
+                                    <h6>Class</h6>
                                     <p class="card-text">
                                         Entitas dasar dalam diagram kelas, mewakili jenis atau tipe objek yang akan
                                         dibuat didalam sebuah sistem.
                                     </p>
                                 </div>
                                 <div class="mb-2">
-                                    <h6>Atribut</h6>
+                                    <h6>Attribute</h6>
                                     <p class="card-text">
                                         Merupakan variabel atau data yang dimiliki oleh sebuah kelas
                                     </p>
                                 </div>
                                 <div class="mb-2">
-                                    <h6>Metode</h6>
+                                    <h6>Method</h6>
                                     <p class="card-text">
                                         Merupakan fungsi atau operasi yang dapat dilakukan oleh sebuah kelas
                                     </p>
                                 </div>
                                 <div class="mb-2">
-                                    <h6>Metode</h6>
+                                    <h6>Connection</h6>
                                     <p class="card-text">
                                         Hubungan menggambarkan cara kelas – kelas berinteraksi satu sama lain dalam
                                         sebuah sistem
@@ -171,13 +185,13 @@
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="mb-2">
-                                    <h6>Objek</h6>
+                                    <h6>Object</h6>
                                     <p class="card-text">
                                         Objek merupakan instance dari sebuah kelas dalam sistem
                                     </p>
                                 </div>
                                 <div class="mb-2">
-                                    <h6>Atribut</h6>
+                                    <h6>Attribute</h6>
                                     <p class="card-text">
                                         Merupakan variabel atau data yang dimiliki oleh sebuah objek
                                     </p>
@@ -285,7 +299,7 @@
         <div class="card" style="width: 800px;">
             <img src="img/deployment.jpg" style="max-height: 550px;" class="card-img-top" alt="...">
             <div class="card-body">
-                <h4 class="mb-4">Deployment Diagram</h4>
+                <h4 class="mb-4">Diagram Deployment</h4>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -382,7 +396,8 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Package diagram atau diagram paket merupakan salah satu jenis UML yang dipakai untuk mengelompokkan elemen-elemen seperti use case maupun class diagram.
+                                    Package diagram atau diagram paket merupakan salah satu jenis UML yang dipakai untuk
+                                    mengelompokkan elemen-elemen seperti use case maupun class diagram.
                                 </p>
                             </div>
                         </div>
@@ -397,7 +412,9 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">memberikan overview sekumpulan kebutuhan dan desain arsitektur dari sebuah sistem yang memiliki  hubungan logis dalam diagram modularnya (memecah sistem menjadi bagian kecil).
+                                    <li class="list-group-item">memberikan overview sekumpulan kebutuhan dan desain
+                                        arsitektur dari sebuah sistem yang memiliki hubungan logis dalam diagram
+                                        modularnya (memecah sistem menjadi bagian kecil).
                                     </li>
                                 </ul>
                             </div>
@@ -421,13 +438,15 @@
                                 <div class="mb-2">
                                     <h6>Import</h6>
                                     <p class="card-text">
-                                        Notasi import mengartikan sebuah package mengimport sebuah fungsi dari Package lain dan memberikan One Way Permission.
+                                        Notasi import mengartikan sebuah package mengimport sebuah fungsi dari Package
+                                        lain dan memberikan One Way Permission.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Access</h6>
                                     <p class="card-text">
-                                        Notasi acces mengartikan sebuah package membutuhkan fungsi dari package lain untuk menjalankan fungsi package itu sendiri.
+                                        Notasi acces mengartikan sebuah package membutuhkan fungsi dari package lain
+                                        untuk menjalankan fungsi package itu sendiri.
                                     </p>
                                 </div>
                             </div>
@@ -455,7 +474,9 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Diagram profil adalah mekanisme ekstensibilitas yang memungkinkan untuk memperluas dan menyesuaikan UML dengan menambahkan blok penyusun baru, membuat properti baru, dan menentukan semantik baru agar bahasanya sesuai dengan domain masalah.
+                                    Diagram profil adalah mekanisme ekstensibilitas yang memungkinkan untuk memperluas
+                                    dan menyesuaikan UML dengan menambahkan blok penyusun baru, membuat properti baru,
+                                    dan menentukan semantik baru agar bahasanya sesuai dengan domain masalah.
                                 </p>
                             </div>
                         </div>
@@ -470,7 +491,8 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Profile diagram digunakan untuk memperluas atau menyesuaikan notasi dan semantik UML standar. 
+                                    <li class="list-group-item">Profile diagram digunakan untuk memperluas atau
+                                        menyesuaikan notasi dan semantik UML standar.
                                     </li>
                                 </ul>
                             </div>
@@ -488,19 +510,23 @@
                                 <div class="mb-2">
                                     <h6>Stereotypes</h6>
                                     <p class="card-text">
-                                        Stereotip digunakan untuk memperkenalkan elemen penyusun baru yang sesuai dengan bahasa domain Anda dan terlihat primitif.
+                                        Stereotip digunakan untuk memperkenalkan elemen penyusun baru yang sesuai dengan
+                                        bahasa domain Anda dan terlihat primitif.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Tagged Values</h6>
                                     <p class="card-text">
-                                        Digunakan untuk memperluas properti UML sehingga bisa menambahkan informasi tambahan dalam spesifikasi elemen model. 
+                                        Digunakan untuk memperluas properti UML sehingga bisa menambahkan informasi
+                                        tambahan dalam spesifikasi elemen model.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Constraints </h6>
                                     <p class="card-text">
-                                        Untuk menentukan semantik atau kondisi yang harus selalu dijaga kebenarannya. Sehingga meungkinkan untuk memperluas semantik blok penyusun UML dengan menambahkan protokol baru.
+                                        Untuk menentukan semantik atau kondisi yang harus selalu dijaga kebenarannya.
+                                        Sehingga meungkinkan untuk memperluas semantik blok penyusun UML dengan
+                                        menambahkan protokol baru.
                                     </p>
                                 </div>
                             </div>
@@ -515,8 +541,11 @@
         <div class="card text-center" style="width: 800px;">
             <div class="card-header"></div>
             <div class="card-body">
-                <h5 class="card-title">Diagram Behaviour</h5>
-                <p class="card-text">Diagram perilaku adalah jenis diagram dalam Unified Modeling Language (UML) yang digunakan untuk menggambarkan perilaku dinamis dari sistem atau komponen dalam sistem. Diagram ini lebih berfokus pada bagaimana objek-objek dalam sistem berinteraksi dan berperilaku selama waktu tertentu.</p>
+                <h5 class="card-title" id="behaviour">Diagram Behaviour</h5>
+                <p class="card-text">Diagram perilaku adalah jenis diagram dalam Unified Modeling Language (UML) yang
+                    digunakan untuk menggambarkan perilaku dinamis dari sistem atau komponen dalam sistem. Diagram ini
+                    lebih berfokus pada bagaimana objek-objek dalam sistem berinteraksi dan berperilaku selama waktu
+                    tertentu.</p>
             </div>
             <div class="card-footer text-body-secondary"></div>
         </div>
@@ -985,7 +1014,8 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Diagram yang digunakan untuk menggambarkan bagaimana objek-objek dalam sistem berinteraksi satu sama lain dalam konteks kasus penggunaan tertentu.
+                                    Diagram yang digunakan untuk menggambarkan bagaimana objek-objek dalam sistem
+                                    berinteraksi satu sama lain dalam konteks kasus penggunaan tertentu.
                                 </p>
                             </div>
                         </div>
@@ -1034,7 +1064,8 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Timing Diagram adalah diagram yang dipakai untuk mengatasi tingkah laku obyek sepanjang jangka waktu tertentu. 
+                                    Timing Diagram adalah diagram yang dipakai untuk mengatasi tingkah laku obyek
+                                    sepanjang jangka waktu tertentu.
                                 </p>
                             </div>
                         </div>
@@ -1049,7 +1080,8 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Timing diagram UML berfungsi untuk memunculkan perubahan dalam keadaan / nilai dari satu atau lebih elemen dari waktu ke waktu. 
+                                    <li class="list-group-item">Timing diagram UML berfungsi untuk memunculkan perubahan
+                                        dalam keadaan / nilai dari satu atau lebih elemen dari waktu ke waktu.
                                     </li>
                                 </ul>
                             </div>
@@ -1067,19 +1099,22 @@
                                 <div class="mb-2">
                                     <h6>Lifeline</h6>
                                     <p class="card-text">
-                                        Garis hidup adalah elemen utama dalam diagram waktu dan digunakan untuk mewakili objek atau entitas dalam sistem yang terlibat dalam interaksi. 
+                                        Garis hidup adalah elemen utama dalam diagram waktu dan digunakan untuk mewakili
+                                        objek atau entitas dalam sistem yang terlibat dalam interaksi.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Activation Bar </h6>
                                     <p class="card-text">
-                                        Bar aktivasi digunakan untuk menunjukkan periode waktu di mana objek atau entitas tertentu aktif atau sedang melakukan sesuatu.
+                                        Bar aktivasi digunakan untuk menunjukkan periode waktu di mana objek atau
+                                        entitas tertentu aktif atau sedang melakukan sesuatu.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Message</h6>
                                     <p class="card-text">
-                                        Pesan digunakan untuk menggambarkan komunikasi atau interaksi antara objek-objek dalam diagram waktu. 
+                                        Pesan digunakan untuk menggambarkan komunikasi atau interaksi antara objek-objek
+                                        dalam diagram waktu.
                                     </p>
                                 </div>
                                 <div class="mb-2">
@@ -1091,43 +1126,51 @@
                                 <div class="mb-2">
                                     <h6>Constraint</h6>
                                     <p class="card-text">
-                                        Kondisi digunakan untuk menunjukkan syarat atau kondisi yang harus dipenuhi sebelum pesan dapat dikirim atau sebelum objek dapat memasuki atau meninggalkan aktivitas tertentu. 
+                                        Kondisi digunakan untuk menunjukkan syarat atau kondisi yang harus dipenuhi
+                                        sebelum pesan dapat dikirim atau sebelum objek dapat memasuki atau meninggalkan
+                                        aktivitas tertentu.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Observation</h6>
                                     <p class="card-text">
-                                        Pengamatan digunakan untuk menunjukkan pemantauan atau pengawasan terhadap objek selama aktivitas berlangsung. 
+                                        Pengamatan digunakan untuk menunjukkan pemantauan atau pengawasan terhadap objek
+                                        selama aktivitas berlangsung.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Time Constraint</h6>
                                     <p class="card-text">
-                                        Kondisi waktu digunakan untuk menunjukkan batasan waktu pada aktivitas atau pesan.
+                                        Kondisi waktu digunakan untuk menunjukkan batasan waktu pada aktivitas atau
+                                        pesan.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Duration Constraint</h6>
                                     <p class="card-text">
-                                        Kondisi durasi digunakan untuk menunjukkan durasi aktivitas atau pesan dalam satuan waktu tertentu.
+                                        Kondisi durasi digunakan untuk menunjukkan durasi aktivitas atau pesan dalam
+                                        satuan waktu tertentu.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Continuation</h6>
                                     <p class="card-text">
-                                        Kelanjutan digunakan untuk menggambarkan kelanjutan dari aktivitas atau pesan di tempat lain dalam diagram waktu.
+                                        Kelanjutan digunakan untuk menggambarkan kelanjutan dari aktivitas atau pesan di
+                                        tempat lain dalam diagram waktu.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Gate</h6>
                                     <p class="card-text">
-                                        Gerbang digunakan untuk menggambarkan titik masuk atau keluar dari aktivitas atau pesan. 
+                                        Gerbang digunakan untuk menggambarkan titik masuk atau keluar dari aktivitas
+                                        atau pesan.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Fragment</h6>
                                     <p class="card-text">
-                                        Fragment digunakan untuk menggambarkan bagian-bagian dari diagram waktu yang terkait dengan kondisi atau perulangan tertentu.
+                                        Fragment digunakan untuk menggambarkan bagian-bagian dari diagram waktu yang
+                                        terkait dengan kondisi atau perulangan tertentu.
                                     </p>
                                 </div>
                             </div>
@@ -1155,7 +1198,9 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Communication Diagram adalah suatu diagram yang mengambarkan struktur interaksi yang terdapat disekitar objek (seperti halnya sequence diagram) dan hubungannya terhadap yang lainnya.
+                                    Communication Diagram adalah suatu diagram yang mengambarkan struktur interaksi yang
+                                    terdapat disekitar objek (seperti halnya sequence diagram) dan hubungannya terhadap
+                                    yang lainnya.
                                 </p>
                             </div>
                         </div>
@@ -1170,15 +1215,20 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Model pesan melalui antar peran atau objek yang mengirimkan operasi penggunaan dan fungsionalitas kasus.
+                                    <li class="list-group-item">Model pesan melalui antar peran atau objek yang
+                                        mengirimkan operasi penggunaan dan fungsionalitas kasus.
                                     </li>
                                     <li class="list-group-item">Mekanisme model dalam desain arsitektur system.
                                     </li>
-                                    <li class="list-group-item">Tangkap interaksi yang mengarahkan pesan yang dilewati antar peran dan objek dalam skenario kolaborasi.
+                                    <li class="list-group-item">Tangkap interaksi yang mengarahkan pesan yang dilewati
+                                        antar peran dan objek dalam skenario kolaborasi.
                                     </li>
-                                    <li class="list-group-item">Model skenario alternatif dalam kasus pemakaian atau operasi yang melibatkan kolaborasi dari berbagai interaksi dan objek.
+                                    <li class="list-group-item">Model skenario alternatif dalam kasus pemakaian atau
+                                        operasi yang melibatkan kolaborasi dari berbagai interaksi dan objek.
                                     </li>
-                                    <li class="list-group-item">Dukung pengidentifikasian objek (sebab kelas), atributnya (parameter pesan), dan operasi (pesan) yang ikut serta dalam use case.
+                                    <li class="list-group-item">Dukung pengidentifikasian objek (sebab kelas),
+                                        atributnya (parameter pesan), dan operasi (pesan) yang ikut serta dalam use
+                                        case.
                                     </li>
                                 </ul>
                             </div>
@@ -1196,19 +1246,24 @@
                                 <div class="mb-2">
                                     <h6>Object</h6>
                                     <p class="card-text">
-                                        Objek adalah instance dari sebuah kelas  yang tersusun secara horizontal. Digambarkan sebagai sebuah kelas (kotak) dengan nama objek didalamnya yang diawali dengan sebuah titik koma (;).
+                                        Objek adalah instance dari sebuah kelas yang tersusun secara horizontal.
+                                        Digambarkan sebagai sebuah kelas (kotak) dengan nama objek didalamnya yang
+                                        diawali dengan sebuah titik koma (;).
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Actor</h6>
                                     <p class="card-text">
-                                        Actor juga dapat berhubungan dengan objek , maka actor juga dapat diurutkan sebagai kolom. Simbolnya sama pada Actor Use Case Diagram.
+                                        Actor juga dapat berhubungan dengan objek , maka actor juga dapat diurutkan
+                                        sebagai kolom. Simbolnya sama pada Actor Use Case Diagram.
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Message</h6>
                                     <p class="card-text">
-                                        Message digambarkan dengan anak panah yang mengarah antar obyek dan diberi label urutan nomor yang mengindikasikan urutan komunikasi yang terjadi antar obyek, seperti yang sudah digambarkan dan dijelaskan di atas.
+                                        Message digambarkan dengan anak panah yang mengarah antar obyek dan diberi label
+                                        urutan nomor yang mengindikasikan urutan komunikasi yang terjadi antar obyek,
+                                        seperti yang sudah digambarkan dan dijelaskan di atas.
                                     </p>
                                 </div>
                             </div>
@@ -1236,7 +1291,9 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="card-text">
-                                    Interaction Overview Diagram merupakan sebuah diagram yang digunakan untuk melakukan visualisasi mengenai kerja sama yang terjadi antara sequence diagram dengan activity diagram.
+                                    Interaction Overview Diagram merupakan sebuah diagram yang digunakan untuk melakukan
+                                    visualisasi mengenai kerja sama yang terjadi antara sequence diagram dengan activity
+                                    diagram.
                                 </p>
                             </div>
                         </div>
@@ -1251,11 +1308,13 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Memberikan abstraksi visual yang memudahkan pemahaman sistem secara cepat tanpa perlu detail teknis yang mendalam.
+                                    <li class="list-group-item">Memberikan abstraksi visual yang memudahkan pemahaman
+                                        sistem secara cepat tanpa perlu detail teknis yang mendalam.
                                     </li>
                                     <li class="list-group-item">Komunikasi dengan Pemangku Kepentingan:
                                     </li>
-                                    <li class="list-group-item">Sebagai alat navigasi untuk pengembang dan membantu dalam memahami cara pengguna akan berinteraksi dengan sistem.
+                                    <li class="list-group-item">Sebagai alat navigasi untuk pengembang dan membantu
+                                        dalam memahami cara pengguna akan berinteraksi dengan sistem.
                                     </li>
                                 </ul>
                             </div>
@@ -1273,13 +1332,16 @@
                                 <div class="mb-2">
                                     <h6>Decision</h6>
                                     <p class="card-text">
-                                        Merupakan sebuah unsur pada Interaction Overview Diagram yang bertugas untuk menunjukkan adanya titik perkembangan yang bersyarat. Jika kondisi benar, maka proses akan terus berjalan
+                                        Merupakan sebuah unsur pada Interaction Overview Diagram yang bertugas untuk
+                                        menunjukkan adanya titik perkembangan yang bersyarat. Jika kondisi benar, maka
+                                        proses akan terus berjalan
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Initial</h6>
                                     <p class="card-text">
-                                        Simbol yang berfungi untuk mendefinisikan awalan dari aliran pada saat sebuah kegiatan sedang dipanggil
+                                        Simbol yang berfungi untuk mendefinisikan awalan dari aliran pada saat sebuah
+                                        kegiatan sedang dipanggil
                                     </p>
                                 </div>
                                 <div class="mb-2">
@@ -1291,13 +1353,16 @@
                                 <div class="mb-2">
                                     <h6>Activity</h6>
                                     <p class="card-text">
-                                        Simbol yang berfungsi untuk memberikan petunjuk seputar aktivitas atau kegiatan yang sedang berlangsung
+                                        Simbol yang berfungsi untuk memberikan petunjuk seputar aktivitas atau kegiatan
+                                        yang sedang berlangsung
                                     </p>
                                 </div>
                                 <div class="mb-2">
                                     <h6>Control Flow</h6>
                                     <p class="card-text">
-                                        Sebuah konektor yang berfungsi untuk menghubungkan dua node di dalam diagram aktivitas. Simbol ini akan berperan sebagai jembatan dari aliran node aktivitas di mana nantinya aliran tersebut akan mengarah ke node target
+                                        Sebuah konektor yang berfungsi untuk menghubungkan dua node di dalam diagram
+                                        aktivitas. Simbol ini akan berperan sebagai jembatan dari aliran node aktivitas
+                                        di mana nantinya aliran tersebut akan mengarah ke node target
                                     </p>
                                 </div>
                             </div>
@@ -1313,7 +1378,44 @@
             <div class="card-header"></div>
             <div class="card-body">
                 <h5 class="card-title">Refrensi</h5>
-                <p class="card-text">Lorem lipsum</p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://codepolitan.com/blog/mengenal-diagram-uml-unified-modeling-language">Mengenal
+                        Diagram UML (Unified Modeling Language)</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://glints.com/id/lowongan/class-diagram-adalah/">Apa Itu Class Diagram dan Fungsinya
+                        dalam Pemrograman</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-object-diagram/">Apa
+                        itu Diagram Objek?</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.pinhome.id/blog/contoh-deployment-diagram/">Pengertian Deployment Diagram :
+                        Tujuan, Simbol, dan Contohnya</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://sis.binus.ac.id/2022/01/26/package-diagram-2/">Package Diagram</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-profile-diagram/">What
+                        is Profile Diagram in UML?</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.dicoding.com/blog/contoh-use-case-diagram/">Contoh Use Case Diagram Lengkap
+                        dengan Penjelasannya</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.dicoding.com/blog/apa-itu-activity-diagram/">Apa itu Activity Diagram? Beserta
+                        Pengertian, Tujuan, dan Contohnya</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.pinhome.id/blog/contoh-statechart-diagram/">Contoh Statechart Diagram
+                        (Definisi dan Manfaat)</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://binus.ac.id/malang/2020/12/diagram-sequence-dalam-analisa-desain-sistem-informasi/">Diagram
+                        Sequence Dalam Analisa & Desain Sistem Informasi</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.tutorialspoint.com/uml/uml_interaction_diagram.htm">UML - Diagram
+                        Interaksi</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.nesabamedia.com/apa-itu-communication-diagram/">Apa itu Communication Diagram?
+                        Mengenal Communication Diagram</a></p>
+                <p class="card-text fw-bolder"><a style="text-decoration: none;" class="text-black fs-6"
+                        href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-interaction-overview-diagram/">What
+                        is Interaction Overview Diagram?</a></p>
             </div>
             <div class="card-footer text-body-secondary"></div>
         </div>
